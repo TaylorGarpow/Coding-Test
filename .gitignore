@@ -1,5 +1,1 @@
-# Terraform state files
-*.tfstate
-*.tfstate.*
-# Terraform cache
-terraform/*.terraform/
+.terraform/*
