@@ -1,0 +1,6 @@
+_sourceCategory=*
+"/api/data"
+| parse regex "response_time=(?<response_time>\d+)
+| where response_time > 3000
+| timeslice 10m
+| count by _timeslice
